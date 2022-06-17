@@ -36,7 +36,8 @@ function Myimage(props){
 function Nametext(props){
     return(
         <div id="name" className="name-text">
-            <h1>{props.name}</h1>
+            <span className="name">{props.name}</span>
+            <span className="description">Software Developer Web Developer</span>
         </div>
     );
 }

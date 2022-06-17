@@ -2,5 +2,5 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #5c4e65;
+    background-color: var(--second-color);
 }
