@@ -1,6 +1,98 @@
-.header-app {
+.firstpage {
+  height: 100vh;
+}
+
+.firstpage-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.circle-1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  opacity: 0.1;
+  height: 4rem;
+  width: 4rem;
+}
+
+.circle-1 img {
+  height: 100%;
   width: 100%;
-  padding: 1vw;
+}
+
+.translate {
+  animation: translate 10s ease-in-out infinite;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  opacity: 0.1;
+  height: 25rem;
+  width: 25rem;
+}
+
+.circle-2 img {
+  height: 100%;
+  width: 100%;
+}
+.var {
+  animation-delay: 2s;
+}
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20rem, 5rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.firstpage-container-left {
+  padding: 2rem;
+  z-index: 1;
+}
+.firstpage-container-right {
+  padding: 2rem;
+  z-index: 1;
+}
+
+.firstpage-container-right > img {
+  animation: floating 5s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
 }
 
 .App {
