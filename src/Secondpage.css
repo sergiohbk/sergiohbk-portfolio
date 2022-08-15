@@ -1,0 +1,43 @@
+.secondpage {
+  height: 100vh;
+  background-color: #001344;
+  overflow: hidden;
+}
+
+.secondpage-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.description {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  padding: 1rem;
+  max-width: 70%;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 65%;
+  flex-wrap: wrap;
+}
+
+.skills > div {
+  width: 4rem;
+  height: auto;
+}
+
+.skills > div > img {
+  width: 100%;
+  height: 100%;
+}
